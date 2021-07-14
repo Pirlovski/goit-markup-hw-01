@@ -1,0 +1,12 @@
+{
+  " printWidth " : 100 ,
+  " tabWidth " : 2 ,
+  " useTabs " : ложь ,
+  " полу " : правда ,
+  " singleQuote " : правда ,
+  " trailingComma " : " все " ,
+  " bracketSpacing " : true ,
+  " jsxBracketSameLine " : ложь ,
+  " arrowParens " : " избегать " ,
+  " proseWrap " : " всегда "
+}
