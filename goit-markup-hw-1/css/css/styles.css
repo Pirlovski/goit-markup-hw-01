@@ -23,7 +23,7 @@
 
 .page .body {
   color: var(--body-color);
-  background-color: var(--white-color);
+  background-color: tomato;
 }
 
 /* ШАПКА ПРОФИЛЯ  */
