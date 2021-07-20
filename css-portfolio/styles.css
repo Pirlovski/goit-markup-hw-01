@@ -1,0 +1,184 @@
+/* цвет основного текста #212121 ; */
+/* вторичный цвет СЕРЫЙ  #757575; */
+/* белый #FFFFFF;    */
+/* АКЦЕНТ СИНИЙ   #2196F3;*/
+/* Серый цвет rgba(117, 117, 117, 1) */
+/* Белый чисто для почты и тел в футере rgba(255, 255, 255, 0,6) */
+/* втоичный цвет фона #F5F4FA; */
+
+:root {
+  --body-color: #2a2a2a;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --white-color-footer: rgba(255, 255, 255, 0, 6);
+  --grey-color: #757575;
+  --main-color: #2f303a;
+  --color-button: #188ce8;
+  --color-section: #e5e5e5;
+  --team-section: #f5f4fa;
+  --footer-index: #2f303a;
+  --header-color: #ececec;
+}
+
+.page .body {
+  color: var(--body-color);
+  background-color: var(--white-color);
+}
+
+/* ШАПКА ПРОФИЛЯ  */
+
+/*  WebStudio */
+header {
+  background-color: var(--header-color);
+}
+.inform-header {
+  color: var(--grey-color);
+}
+
+.inform-header:hover,
+.inform-header:focus {
+  color: var(--accent-color);
+}
+.informs {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+a .color-web-header {
+  color: var(--title-text-color);
+}
+.color-studio {
+  color: var(--title-text-color);
+}
+/* END WebStudio */
+
+/* SITE NAV/Навигация Сайта */
+.nav-links {
+  color: var(--title-text-color);
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.link > a {
+  color: var(--title-text-color);
+}
+.nav-link-studio {
+  color: var(--title-text-color);
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.nav-link-studio:hover,
+.nav-link-studio:focus {
+  color: var(--accent-color);
+}
+
+.nav-link {
+  color: var(--title-text-color);
+  list-style-type: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* FILTER  */
+
+.filter-title {
+  list-style: none;
+}
+
+.filter-list:hover,
+.filter-list:focus {
+  color: var(--accent-color);
+}
+/* LIST IMAGES /Список картинок  */
+
+.title-list {
+  list-style: none;
+}
+.description {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.inform-project {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* footer */
+.color-studio-footer {
+  color: var(--white-color);
+}
+
+.inform-footer {
+  color: var(--white-color-footer);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.inform-footer:hover,
+.inform-footer:focus {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+address .texts {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.text-maps {
+  color: var(--white-color);
+}
+
+.text-maps:focus,
+.text-maps:hover {
+  color: var(--accent-color);
+}
+
+a .text-inform {
+  color: var(--white-color-footer);
+}
+
+/* .text-inform:focus ,
+.text-inform:hover {
+  color: ;
+} */
+
+address {
+  list-style-type: none;
+}
+/* Button  */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--white-color);
+}
+
+.button-primary {
+  background-color: var(--accent-color);
+}
+.footer {
+  background-color: var(--footer-index);
+}
