@@ -251,9 +251,8 @@
   line-height: 2;
 }
 
-
-.images .portfolio-item-description {
-  text-decoration-line: none;
+.portfolio-item-description {
+  text-decoration: none;
   color: var(--grey-color);
   font-style: normal;
   font-weight: normal;
