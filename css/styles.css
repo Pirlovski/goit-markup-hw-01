@@ -242,22 +242,26 @@
 .title-list {
   list-style: none;
 }
+
 .portfolio-item-title {
-  text-decoration: none;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+  list-style: none;
 }
 
-.portfolio-item-description {
+.portfolio-link {
   text-decoration: none;
+}
+.portfolio-item-description {
   color: var(--grey-color);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
+  list-style: none;
 }
 
 /* footer */
