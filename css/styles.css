@@ -19,7 +19,8 @@
   --team-section: #f5f4fa;
   --footer-index: #2f303a;
   --header-color: #ececec;
-  --red-color: #FF0000 ;
+  --red-color: #ff0000;
+  --blue-color: #0000ff;
 }
 
 /* ШАПКА ПРОФИЛЯ  */
@@ -49,18 +50,19 @@ body {
   color: var(--title-text-color);
   list-style-type: none;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .nav-link:hover,
-.nav-link:focus
-{
+.nav-link:focus {
   color: var(--accent-color);
 }
 
 .nav-link:active {
-  color: var(--red-color);
+  color: var(--blue-color);
+}
 
+.link {
+  text-decoration: none;
 }
 
 /* Information/ Информация    */
@@ -75,7 +77,6 @@ body {
 .contact-link {
   color: var(--grey-color);
   cursor: pointer;
-  text-decoration: none;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -100,7 +101,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
-  text-decoration: none;
 }
 .primary-button:hover,
 .primary-button:focus {
@@ -146,7 +146,6 @@ body {
 }
 /* Team  */
 
-
 .portfolio-title {
   list-style: none;
 }
@@ -178,7 +177,7 @@ body {
 
 .logo {
   color: var(--title-text-color);
-  text-decoration: none;
+
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -193,23 +192,20 @@ body {
 .blue-text {
   color: var(--accent-color);
 }
-/* .black-text {
-  color: var(--title-text-color); */
+
+.blue-text:active {
+  color: var(--blue-color);
 }
-
-
 
 .link-to-maps {
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  
 }
 
-.text-maps {
+.text-maps > {
   color: var(--white-color);
-  text-decoration: none;
 }
 
 .text-maps:focus,
@@ -270,10 +266,6 @@ body {
   list-style: none;
 }
 
-.portfolio-link {
-  text-decoration: none;
-  list-style: none;
-}
 .portfolio-item-description {
   color: var(--grey-color);
   font-style: normal;
@@ -284,7 +276,6 @@ body {
 }
 
 /* footer */
-
 
 .inform-footer {
   color: var(--white-color-footer);
@@ -323,13 +314,7 @@ body {
   background-color: var(--white-color);
 } */
 
-
 .footer {
   background-color: var(--footer-index);
   list-style: none;
 }
-
-
-
-
-
