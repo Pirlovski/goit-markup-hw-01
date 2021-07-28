@@ -21,6 +21,7 @@
   --header-color: #ececec;
   --red-color: #ff0000;
   --blue-color: #0000ff;
+  --header-outline: #ececec;
 }
 
 /* ШАПКА ПРОФИЛЯ  */
@@ -31,6 +32,9 @@ body {
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   width: 1600px;
+}
+.header-body {
+  outline: 1px solid var(--header-outline);
 }
 .container {
   display: flex;
