@@ -131,7 +131,6 @@ body {
 }
 .contact-link {
   color: var(--grey-color);
-  cursor: pointer;
 
   padding-bottom: 32px;
   padding-top: 32px;
@@ -157,6 +156,8 @@ body {
   line-height: 1.36;
 
   margin: 0;
+
+  padding-bottom: 30px;
 }
 
 .primary-button {
@@ -169,7 +170,7 @@ body {
   padding: 10px 32px;
   border-radius: 4px;
   border: 1px solid transparent;
-  margin-top: 35px;
+  align-items: center;
 }
 
 .primary-button:hover,
@@ -181,7 +182,8 @@ body {
 .main-section {
   background: var(--main-color);
   text-align: center;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* ОСОБЕННОСТИ */
@@ -196,7 +198,8 @@ body {
 }
 
 .section-features {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .featurs-item {
@@ -234,6 +237,7 @@ body {
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ  */
 .work {
   padding-bottom: 94px;
+  padding-top: 94px;
   background-color: var(--color-section);
   display: flex;
 }
@@ -278,7 +282,8 @@ body {
 .team {
   color: var(--title-text-color);
   background-color: var(--team-section);
-
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
 }
 
@@ -327,6 +332,10 @@ body {
 
 .container-team {
   display: flex;
+}
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* 
 .team .team-list {
@@ -407,8 +416,8 @@ body {
 
 .portfolio-list {
   list-style: none;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  padding-bottom: 34px;
+  /* padding-top: 94px; */
   display: flex;
   margin-left: 280px;
   margin-right: 280px;
