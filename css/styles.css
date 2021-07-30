@@ -37,15 +37,23 @@ body {
   outline: 1px solid var(--header-outline);
 }
 .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.flex {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  /* outline: 2px solid tomato; */
+  margin: 0 auto;
+  /* padding: 0 15px; */
   flex-wrap: wrap;
+}
+.section-header {
+  display: flex;
+  justify-content: center;
+}
+.section-contact {
+  display: flex;
 }
 .color-studio {
   color: var(--title-text-color);
@@ -60,8 +68,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding-left: 0;
-  margin: 0;
+  padding: 0;
 }
 
 .nav-list .item-header + .item-header {
@@ -76,8 +83,8 @@ body {
   color: var(--title-text-color);
   list-style-type: none;
   cursor: pointer;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 
   display: block;
 }
@@ -100,17 +107,21 @@ body {
 }
 
 /* Information/ Информация    */
-.contact-list .list {
+.list {
+  /* padding: 0;
+  margin: 0; */
+  list-style: none;
+}
+
+.contact-list {
   display: flex;
   list-style: none;
   color: var(--grey-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 0;
-  margin-top: 0;
+  align-items: center;
   margin-left: auto;
-  padding: 0;
 }
 
 .contact-list .item-link + .item-link {
@@ -119,21 +130,15 @@ body {
 
 .item-link {
   display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
-.list {
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: auto;
-  list-style: none;
-  display: flex;
-}
 .contact-link {
   color: var(--grey-color);
 
-  padding-bottom: 32px;
-  padding-top: 32px;
+  /* padding-bottom: 32px;
+  padding-top: 32px; */
   padding-left: 0;
 }
 .contact-link:hover,
@@ -154,10 +159,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
-  margin: 0;
-
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
   padding-bottom: 30px;
+  width: 696px;
 }
 
 .primary-button {
@@ -182,8 +188,8 @@ body {
 .main-section {
   background: var(--main-color);
   text-align: center;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 /* ОСОБЕННОСТИ */
@@ -191,10 +197,11 @@ body {
 .work {
   background-color: var(--color-section);
 }
-.features-list .list {
+.features-list {
   margin-bottom: 0;
   margin-top: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .section-features {
@@ -202,20 +209,19 @@ body {
   padding-top: 94px;
 }
 
-.featurs-item {
-  flex-basis: calc(100% / 4-30px);
-  margin-right: 30px;
-  width: 270px;
-}
-.featurs-item:nth-child(4n) {
-  margin-right: 0;
-}
-/* .features-item:not(:last-child){
-  margin-right: 30px;
+/* .featurs-item {
+  /* margin: 0 auto;
+  padding: 0 30px 0 0; */
 } */
+.featurs-item:nth-child(4n) {
+  padding-right: 0;
+}
 
-.featurs-list .list .featurs-item {
+.featurs-list {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .featurs-item-title {
@@ -237,24 +243,20 @@ body {
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ  */
 .work {
   padding-bottom: 94px;
-  padding-top: 94px;
+
   background-color: var(--color-section);
   display: flex;
 }
 .work .work-list {
   list-style: none;
-  margin-top: 0;
   margin-bottom: 0;
   display: flex;
   flex-wrap: nowrap;
-  margin-left: -30px;
-  margin-top: -30px;
+margin-top: 0;
   padding: 0;
 }
 .work-item {
-  flex-basis: calc(100% / 3-30px);
-  margin-left: 30px;
-  margin-top: 30px;
+/* margin: 0; */
 }
 
 .work-list .work-item + .work-item {
@@ -270,11 +272,10 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
 
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Team  */
@@ -290,17 +291,22 @@ body {
 .team-item {
   margin: 0;
   list-style: none;
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: nowrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  padding-left: 0;
+  
+  /* margin-left: -30px;
+  margin-top: -30px; */
+  padding: 0;
 }
+
+
+
+
 .team-list {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 4 -30px);
+  /* margin-left: 30px;
+  margin-top: 30px; */
+
+justify-content: space-between;
 }
 
 .teammate {
@@ -358,9 +364,9 @@ body {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  margin-right: 93px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-right: 93px;
+  /* padding-top: 21px;
+  padding-bottom: 21px; */
 }
 .white-text {
   color: var(--white-color);
