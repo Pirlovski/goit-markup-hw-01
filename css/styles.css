@@ -21,8 +21,8 @@
   --header-color: #ececec;
   --red-color: #ff0000;
   --blue-color: #0000ff;
-
-  --border-color: #eeeeee;
+  --transparent:var(--transparent)
+  --border-color: #eeeeee ;
 }
 
 /* ШАПКА ПРОФИЛЯ  */
@@ -32,14 +32,31 @@
 body {
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
+  background-color: var(--white-color);
 }
+
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
+h1,h2,h3,h4,h5 ,h6 ,p {
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
-  border: 1px solid var(--header-color);
+  border: 1px solid var(--white-color);
   padding: 24px 0;
 }
 .container {
@@ -70,26 +87,26 @@ ul {
 .nav-list {
   display: flex;
   color: var(--title-text-color);
-  list-style: none;
+ 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.nav-list .item-header + .item-header {
+
+.item-header:not(:first-child){
   margin-left: 50px;
 }
-.item-header:first-child {
-  padding-left: 93px;
-}
+
 .nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .nav-link {
   color: var(--title-text-color);
-  list-style-type: none;
-  cursor: default;
+
+  /* cursor: pointer; */
 
   display: block;
 }
@@ -109,18 +126,15 @@ ul {
 
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Information/ Информация    */
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 
 .contact-list {
   display: flex;
-  list-style: none;
+  
   color: var(--grey-color);
   font-weight: 500;
   font-size: 14px;
@@ -129,10 +143,10 @@ ul {
   margin-left: auto;
 }
 
-.contact-list .item-link + .item-link {
+
+.item-link:not(:first-child){
   margin-left: 50px;
 }
-
 .item-link {
   display: flex;
   margin-left: auto;
@@ -141,7 +155,7 @@ ul {
 
 .contact-link {
   color: var(--grey-color);
-  cursor: default;
+  /* cursor: pointer; */
 
   padding-left: 0;
 }
@@ -155,9 +169,7 @@ ul {
 }
 
 /* Main   */
-.main {
-  background-color: var(--color-section);
-}
+
 .main-section .main-title {
   color: var(--white-color);
   font-weight: 900;
@@ -166,7 +178,7 @@ ul {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   width: 696px;
 }
 
@@ -175,18 +187,18 @@ ul {
   background-color: var(--accent-color);
   font-size: 16px;
   line-height: 1.87;
-  cursor: pointer;
+
   min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
-  border: 1px solid transparent;
-  align-items: center;
+  border: 1px solid var(--transparent);
+
 }
 
 .primary-button:hover,
 .primary-button:focus {
-  color: var(--white-color);
-  background-color: var(--color-button);
+  color: var(--accent-color);
+  background-color: var(--white-color);
 }
 
 .main-section {
@@ -199,18 +211,17 @@ ul {
 /* ОСОБЕННОСТИ */
 .section-features,
 .work {
-  background-color: var(--color-section);
+  background-color: var(--white-color);
 }
 .features-list {
-  margin-bottom: 0;
-  margin-top: 0;
+ 
   display: flex;
   justify-content: space-between;
 }
 
 .section-features {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  margin-bottom: 94px;
+  margin-top: 94px;
 }
 
 .featurs-list {
@@ -223,24 +234,22 @@ ul {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 0;
-  margin-bottom: 10px;
+ 
+  margin: 0 0 10px 0 ;
 }
 .featurs-item-discription {
   color: var(--grey-color);
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 0;
+ 
 }
 .featurs-item {
   width: 270px;
 }
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ  */
 .work {
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 
-  background-color: var(--color-section);
   display: flex;
 }
 .work .work-list {
@@ -253,9 +262,9 @@ ul {
   text-align: center;
   font-size: 36px;
   line-height: 1.16;
-  padding-bottom: 50px;
-  margin: 0 auto;
-  text-align: center;
+  margin-bottom: 50px;
+  
+  
 }
 
 /* Team  */
@@ -263,20 +272,21 @@ ul {
 .team {
   color: var(--title-text-color);
   background-color: var(--team-section);
-  padding: 94px 0;
+  margin: 94px 0;
 
   display: flex;
 }
 
 .team-item {
-  margin: 0;
+  
   display: flex;
-  list-style: none;
-  padding: 0;
+  
+ 
 }
 
-.team-item .team-list + .team-list {
-  padding-left: 30px;
+
+.team-list:not(:first-child){
+  margin-left: 30px;
 }
 .team-list {
   text-align: center;
@@ -285,21 +295,25 @@ ul {
   padding-bottom: 10px;
   padding-top: 30px;
   text-align: center;
-  margin: 0;
+  
 }
-.teammate-position {
-  margin: 0;
-}
+/* .teammate-position {
+ 
+} */
 .portfolio-title {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  
+  
   display: flex;
   flex-wrap: wrap;
 
-  padding: 0;
+  
 }
+.team-element{
+  
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
 
+}
 .portfolio-element:not(:nth-child(3n + 0)) {
   margin-right: 30px;
 }
@@ -360,7 +374,7 @@ ul {
 
 .text-maps {
   color: var(--white-color);
-  cursor: default;
+  /* cursor: pointer; */
 }
 
 .text-maps:focus,
@@ -375,9 +389,14 @@ ul {
   background-color: var(--white-color);
 }
 
-.button-primary {
+/* .button-primary {
   background-color: var(--accent-color);
 }
+.button-primary:focus,
+.button-primary:hover{
+  color: var(--accent-color);
+  background-color: var(--white-color);
+} */
 .footer-section {
   background-color: var(--footer-index);
   font-family: Raleway;
@@ -394,12 +413,12 @@ ul {
 
 .portfolio-list {
   display: flex;
-  list-style: none;
-  margin: 0 auto;
-  display: flex;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 50px;
+margin-bottom: 50px;
+justify-content: center;
+ 
+  /* display: flex; */
+  
+  
 }
 
 .secondary-button {
@@ -407,6 +426,7 @@ ul {
   background-color: var(--team-section);
   padding: 6px 22px;
   border-radius: 4px;
+ 
 }
 
 .secondary-button:hover,
@@ -422,16 +442,16 @@ ul {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  list-style: none;
+ 
 }
 .portfolio-paragraph {
   display: flex;
   text-align: center;
 }
-
-.portfolio-list .portfolio-paragraph + .portfolio-paragraph {
+.portfolio-paragraph:not(:first-child){
   margin-left: 8px;
 }
+
 .portfolio-section {
   padding: 94px 0;
 }
@@ -441,9 +461,9 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
-  list-style: none;
+  
 
-  margin: 0;
+  
 }
 
 /* footer */
@@ -482,15 +502,15 @@ ul {
 
 .footer {
   background-color: var(--footer-index);
-  list-style: none;
+  
   padding: 60px 0;
 }
 .container-footer {
-  margin-left: auto;
-  margin-right: auto;
+  
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+  margin: 0 auto;
 }
 .footer-item {
   margin-bottom: 9px;
