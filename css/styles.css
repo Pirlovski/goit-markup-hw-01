@@ -141,7 +141,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  align-items: center;
+
   margin-left: auto;
 }
 
@@ -190,6 +190,7 @@ img {
   min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
+  border: none;
 }
 
 .primary-button:hover,
@@ -267,24 +268,17 @@ img {
   display: flex;
 }
 
-.team-item {
+.team-list {
   display: flex;
+  justify-content: space-between;
 }
 
-.team-list:not(:first-child) {
-  margin-left: 30px;
-}
-.team-list {
+.team-item {
   text-align: center;
 }
 .teammate {
   margin-bottom: 10px;
-
-  text-align: center;
 }
-/* .teammate-position {
- 
-} */
 .portfolio-title {
   display: flex;
   flex-wrap: wrap;
@@ -300,16 +294,12 @@ img {
 .portfolio-element:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
-.portfolio-link {
-  margin: 0;
-  padding: 0;
-}
+
 .container-team {
   display: flex;
 }
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .portfolio-content {
